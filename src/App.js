@@ -70,7 +70,7 @@ class App extends Component{
 
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
-    fetch('http://localhost:3000/imageurl' ,
+    fetch('https://immense-tundra-48033.herokuapp.com/imageurl' ,
       {
         method: 'POST',
         headers: {'Accept': 'application/json', 'Content-Type': 'application/json'},
@@ -82,7 +82,7 @@ class App extends Component{
     .then(response => {
       this.displayBoundary(this.calculateFaceLocation(response));
 
-      fetch('http://localhost:3000/image' ,
+      fetch('https://immense-tundra-48033.herokuapp.com/image' ,
       {
         method: 'PUT',
         headers: {'Accept': 'application/json', 'Content-Type': 'application/json'},

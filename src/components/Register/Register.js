@@ -25,7 +25,7 @@ class Register extends React.Component{
 	onButtonSubmit = (event) =>{
 		event.preventDefault()
 
-		fetch('http://localhost:3000/register' ,
+		fetch('https://immense-tundra-48033.herokuapp.com/register' ,
 		{
 			method: 'POST',
 			headers: {'Accept': 'application/json', 'Content-Type': 'application/json'},
